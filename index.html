@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset="windows-1251" />
+<title>
+Check knowledge of words
+</title>
+ <link rel="shortcut icon" type="image/png" href="img/logo_red_proz.png">
+
+<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+<script src="js/myscripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="All">
+    <div id="center_block">
+        <p id="textHi">Привет! Здесь ты можешь проверить свои знания слов английского языка!</p>
+        <p class="text">Выберете категорию слов хотите проработать</p>
+        <div id="All_categories">
+            <div id="cat1" class="categorys">
+                <input type="checkbox" name="option1" value="a2" id="w1" class="verbs">1-я группа неправильных глаголов<Br>
+                <input type="checkbox" name="option2" value="a3" id="w2" class="verbs">2-я группа неправильных глаголов<Br> 
+                <input type="checkbox" name="option3" value="a4" id="w3" class="verbs">3-я группа неправильных глаголов<Br>
+            </div>
+            <div id="cat2" class="categorys">
+                <input type="checkbox" name="option4" value="a5" id="w4">Предлоги<br /><br />
+            </div>
+            <div id="cat3" class="categorys">
+                <input type="checkbox" name="option4" value="a5" id="w5">Новые слова</p>
+                <div class="shadow_block">
+                    <input type="text" size="1" id="inpunFirstWord" class="InputNum"> <div>Введите номер слова, с которого хотите начать</div>
+                    <input type="text" size="1" id="inpunCountWords" class="InputNum"> <div>Введите количество слов, которые хотите проработать</div>
+                    <div>Выбрать <input type="text" size="1" id="inpunLastWords" > последних слов</div>
+                    
+                    <p><input type="submit" value="Загрузить новые слова" id="LoadNewWords" class="ButtonPointer"></p>
+                    <p><input type="submit" value="Показать все слова" id="GetNewWords" ></p>
+                </div>
+                
+            </div>
+        </div>      
+        <br /><br /><br />
+       <!-- <p><input type="submit" value="Тест" id="Testing"></p>  -->
+        
+        <p class="text">Приступим?</p>
+        <p><input type="submit" value="Начать" id="begin" style="font-size:28px; font-weight: bold;"></p>
+        <div></div>
+        
+        <div class="ShadowCheck" id="verification">
+        <span>Вводить слова надо маленькими буквами</span>
+        
+            <p class="text2">Введите <span id='WordsOrVerbs'></span>: <span id="RuWord"> </span>  </p>
+            <p >Осталось &nbsp;<span id="counter"></span>&nbsp; слов</p> 
+        
+        <input type="text" size="20" id="inpunWord" class="Input_Words"> <span id="Rezult"> </span><span id="rightWord"> </span><br />
+        <div class="shadowVerbs" id="FormsVerbs">
+             <input type="text" size="20" id="inpunWord2" class="Input_Words"> <span id="Rezult2"> </span><span id="rightWord2"> </span><br />
+            <input type="text" size="20" id="inpunWord3" class="Input_Words"> <span id="Rezult3"> </span><span id="rightWord3"> </span><br />
+        </div>
+       
+        <p><input type="submit" value="Проверить" id="check"><input type="submit" value="Вывести все слова" id="ShowAllWords" class="shadow_block2"></p>
+        <p><input type="submit" value="Повторить слова с ошибками" id="RepeatError"></p>
+        <br />
+        </div>
+        <div id="AddNewWords">
+         <center>Что бы ввести в базу знаний новые слова нажмите кнопку "Ввести новые слова" <br />
+        <input type="submit" value="Ввести новые слова" id="StartNewWords" style="font-size: 16px; margin: 0 auto;">
+        </center>
+        </div>
+        
+        
+         
+                <div id="BlockForAllWords">
+           
+                    <div id="AllWords1" class="AllWords"></div>
+                    <div id="AllWords2" class="AllWords"></div>
+                    <div id="AllWords3" class="AllWords"></div>
+                    <div id="AllWordsRu" class="AllWords"></div>
+                </div>
+        
+    </div>
+        
+
+</div>
+
+<div id="Tinting" class="shadow_InputBlock"></div>
+<div id="InputWords" class="shadow_InputBlock">
+                <center>
+                    <input type="text" size="20" class="NewWords" value="Введите английское слово " id="Eng_Word" style="font-size: 18px;"> <span class="textForNewWords"></span>
+                    <br />
+                    <input type="text" size="20" class="NewWords" value="Введите перевод на русский" id="Ru_Word" style="font-size: 18px; margin-left: 5px;"> <span class="textForNewWords"></span>
+                    <p><input type="submit" value="Ввести в базу знаний" id="InputInDB2" style="font-size: 18px;"></p>
+                
+                    <p id="ShowNewWords"> </p>
+                </center>
+            </div>            
+        
+
+</body>
+
+</html>
